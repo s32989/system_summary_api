@@ -10,6 +10,7 @@ def system_health_check():
 
 def get_system_processes(by, limit):
     procs = list(psutil.process_iter())
+
     # prime the cpu_percent call for each process
     for p in procs:
         try:
