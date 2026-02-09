@@ -17,7 +17,8 @@ def get_runtime():
     minutes = (elapsed % 3600) // 60
     seconds = elapsed % 60
 
-    return { "run_time" : f"{hours:02}:{minutes:02}:{seconds:02}" }
+    return { "run_time" : f"{hours:02}:{minutes:02}:{seconds:02}",
+             "run_time_seconds" : elapsed}
 
 def get_call_count():
     return stats
